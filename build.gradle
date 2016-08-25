@@ -1,0 +1,62 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version = '1.0'
+
+dependencies {
+    compile fileTree(dir: 'vendor/main', include: '*.jar')
+    testCompile fileTree(dir: 'vendor/test', include: '*.jar')
+}
+
+mainClassName = "pt.isel.ls.app.HerokuServer"
+
+task stage(dependsOn: ['clean', 'installApp'])
+
+//java -cp ./vendor/main/*;./build/classes/main; pt.isel.ls.app.EntryPoint GET /movies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        attributes(
+//                "Class-Path": configurations.compile.collect { it.getName() }.join(' '))    }
+//        attributes 'Main-Class': 'pt.isel.ls.app.EntryPoint'
+
+//java -cp "build\libs\1415-1-LS-LI41N-G01.jar;vendor\main\lib\*;" ui.App
+//java -cp "\build\classes;vendor\main\lib\*;" ui.App
+
+//java -cp "./build/libs/1516-2-LI41D-G12-1.0.jar;./vendor/main/*" pt.isel.ls.app.EntryPoint
+//java -cp "./build/libs/1516-2-LI41D-G12-1.0.jar;./vendor/main/*.jar" pt.isel.ls.app.EntryPoint
+//java -cp "./vendor/main/*.jar" -jar "./build/libs/1516-2-LI41D-G12-1.0.jar"
+
+//OKKKKKK
+//java -cp ./vendor/main/sqljdbc4.jar -jar ./build/libs/1516-2-LI41D-G12-1.0.jar
+
+//quando executando na consola é necessário //
+//e também rebenta com &
+

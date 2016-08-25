@@ -1,0 +1,1 @@
+web: ./build/install/1516-2-LI41D-G12/bin/1516-2-LI41D-G12
